@@ -18,3 +18,7 @@ commands:
     description: Sets your home
     usage: /<command>
     aliases: seth
+  ping:
+    description: Gets your or other player's ping
+    usage: /<command> [<Player>]
+    aliases: p

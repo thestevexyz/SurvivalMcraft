@@ -7,6 +7,7 @@ import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 import xyz.thesteve.survivalmcraft.commands.HomeCommand;
+import xyz.thesteve.survivalmcraft.commands.PingCommand;
 import xyz.thesteve.survivalmcraft.commands.SethomeCommand;
 import xyz.thesteve.survivalmcraft.commands.SpawnCommand;
 import xyz.thesteve.survivalmcraft.events.PlayerDeathEvent;
@@ -45,8 +46,11 @@ public class Main extends JavaPlugin {
 
     private void registerCommands() {
         getCommand("spawn").setExecutor(new SpawnCommand(this));
+
         getCommand("home").setExecutor(new HomeCommand(this));
         getCommand("sethome").setExecutor(new SethomeCommand(this));
+
+        getCommand("ping").setExecutor(new PingCommand(this));
     }
 
     private void loadConfigFiles() {
