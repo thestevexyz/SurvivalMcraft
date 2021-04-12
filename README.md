@@ -1,4 +1,7 @@
 # SurvivalMcraft
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b4e0ec6bb71d4c94ae0af7e0735a0922)](https://app.codacy.com/gh/thestevexyz/SurvivalMcraft?utm_source=github.com&utm_medium=referral&utm_content=thestevexyz/SurvivalMcraft&utm_campaign=Badge_Grade_Settings)
+
 Official plugin of the SurvivalMcraft Server
 
 This plugin was made for a private project called SurvivalMcraft.
