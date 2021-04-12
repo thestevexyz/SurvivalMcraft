@@ -1,7 +1,6 @@
 package xyz.thesteve.survivalmcraft.utils;
 
 import org.bukkit.configuration.file.FileConfiguration;
-import xyz.thesteve.survivalmcraft.Main;
 
 public abstract class Config {
 

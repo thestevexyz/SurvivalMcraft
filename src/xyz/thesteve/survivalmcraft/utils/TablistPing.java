@@ -4,13 +4,11 @@ import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.scoreboard.DisplaySlot;
 import org.bukkit.scoreboard.Objective;
-import org.bukkit.scoreboard.RenderType;
 import org.bukkit.scoreboard.Scoreboard;
 import xyz.thesteve.survivalmcraft.Main;
 import xyz.thesteve.survivalmcraft.commands.PingCommand;
 
 import java.util.HashMap;
-import java.util.Map;
 
 public class TablistPing {
 
