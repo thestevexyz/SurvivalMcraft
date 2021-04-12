@@ -7,16 +7,9 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.craftbukkit.v1_16_R3.entity.CraftPlayer;
 import org.bukkit.entity.Player;
-import xyz.thesteve.survivalmcraft.Main;
-import xyz.thesteve.survivalmcraft.Var;
+import xyz.thesteve.survivalmcraft.utils.Var;
 
 public class PingCommand implements CommandExecutor {
-
-    private final Main plugin;
-
-    public PingCommand(Main plugin) {
-        this.plugin = plugin;
-    }
 
     @Override
     public boolean onCommand(CommandSender commandSender, Command command, String label, String[] args) {
@@ -51,7 +44,7 @@ public class PingCommand implements CommandExecutor {
         return true;
     }
 
-    private int getPing(final Player player) {
+    public static int getPing(final Player player) {
         return (((CraftPlayer)player).getHandle()).playerConnection.player.ping;
     }
 }

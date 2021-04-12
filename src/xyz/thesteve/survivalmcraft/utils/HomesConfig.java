@@ -3,7 +3,6 @@ package xyz.thesteve.survivalmcraft.utils;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import xyz.thesteve.survivalmcraft.Main;
-import xyz.thesteve.survivalmcraft.Var;
 
 import java.io.*;
 import java.util.logging.Level;
@@ -17,7 +16,6 @@ public class HomesConfig extends Config {
     private File homesFile = null;
 
     public HomesConfig(Main plugin) {
-        super(plugin);
         this.plugin = plugin;
     }
 

@@ -6,7 +6,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
 import xyz.thesteve.survivalmcraft.Main;
-import xyz.thesteve.survivalmcraft.Var;
+import xyz.thesteve.survivalmcraft.utils.Var;
 import xyz.thesteve.survivalmcraft.utils.Home;
 
 public class SethomeCommand implements CommandExecutor {

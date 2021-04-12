@@ -1,4 +1,4 @@
-package xyz.thesteve.survivalmcraft;
+package xyz.thesteve.survivalmcraft.utils;
 
 public class Var {
 

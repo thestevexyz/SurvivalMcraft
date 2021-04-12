@@ -1,13 +1,17 @@
 package xyz.thesteve.survivalmcraft.commands;
 
-import org.bukkit.*;
+import org.bukkit.Note;
+import org.bukkit.Bukkit;
+import org.bukkit.Instrument;
+import org.bukkit.Location;
+import org.bukkit.Particle;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
 import xyz.thesteve.survivalmcraft.Main;
-import xyz.thesteve.survivalmcraft.Var;
+import xyz.thesteve.survivalmcraft.utils.Var;
 
 import java.util.ArrayList;
 import java.util.HashMap;

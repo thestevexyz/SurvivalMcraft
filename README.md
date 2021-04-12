@@ -6,9 +6,9 @@ Because it is only made for this specific project, I have not added any configur
 Maybe a configuration file will be added later if publicly demanded.
 
 ## Features
-- Home system (only one home per player (additional homes might be added later))
-- Spawn command
-- Ping command
+-  Home system (only one home per player (additional homes might be added later))
+-  Spawn command
+-  Ping command
 
 The home and spawn command have a beautiful animation with a teleportation delay of five seconds, that can be cancelled if the player moves.
 

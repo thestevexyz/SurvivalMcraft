@@ -14,6 +14,8 @@ import xyz.thesteve.survivalmcraft.events.PlayerDeathEvent;
 import xyz.thesteve.survivalmcraft.events.PlayerMoveEvent;
 import xyz.thesteve.survivalmcraft.utils.Home;
 import xyz.thesteve.survivalmcraft.utils.HomesConfig;
+import xyz.thesteve.survivalmcraft.utils.TablistPing;
+import xyz.thesteve.survivalmcraft.utils.Var;
 
 import java.util.HashMap;
 
@@ -30,11 +32,15 @@ public class Main extends JavaPlugin {
 
         loadConfigFiles();
 
+        new TablistPing(this).start();
+
         Bukkit.getConsoleSender().sendMessage(Var.PREFIX + "§aPlugin enabled successfully.");
     }
 
     @Override
     public void onDisable() {
+        Bukkit.getScheduler().cancelTasks(this);
+
         Bukkit.getConsoleSender().sendMessage(Var.PREFIX + "§cPlugin disabled successfully.");
     }
 
@@ -50,7 +56,7 @@ public class Main extends JavaPlugin {
         getCommand("home").setExecutor(new HomeCommand(this));
         getCommand("sethome").setExecutor(new SethomeCommand(this));
 
-        getCommand("ping").setExecutor(new PingCommand(this));
+        getCommand("ping").setExecutor(new PingCommand());
     }
 
     private void loadConfigFiles() {
